@@ -1,0 +1,29 @@
+[
+  {
+  "id": 1,
+  "title": "Bối cảnh & Định hướng chung – Khi Việt Nam bước vào kỷ nguyên hội nhập",
+  "description": "Tập mở đầu của series podcast 'Nghe Việt Nam Thay Đổi' giới thiệu bối cảnh kinh tế - xã hội Việt Nam giai đoạn 2006–2015, thời kỳ sau khi gia nhập WTO. Tập này phân tích mục tiêu chiến lược phát triển nhanh, bền vững, gắn với công bằng xã hội và định hướng xã hội chủ nghĩa trong quá trình hội nhập toàn cầu.",
+  "duration": 259,
+  "audioUrl": "https://res.cloudinary.com/dw9cr6zyk/video/upload/1028_1_gwxebo.mp3",
+  "imageUrl": "https://res.cloudinary.com/dw9cr6zyk/image/upload/v1761664747/unnamed_1_h5vuan.jpg",
+  "releaseDate": "2025-10-23"
+  },
+  {
+    "id": 2,
+    "title": "Thay đổi xã hội qua công nghệ số",
+    "description": "Thảo luận về tác động của chuyển đổi số đến cuộc sống hàng ngày của người dân Việt Nam.",
+    "duration": 2400,
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=500&fit=crop",
+    "releaseDate": "2025-01-10"
+  },
+  {
+    "id": 3,
+    "title": "Văn hóa truyền thống gặp gỡ hiện đại",
+    "description": "Cách các thế hệ trẻ Việt Nam vừa giữ gìn truyền thống vừa đón nhận sự thay đổi.",
+    "duration": 2700,
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=500&h=500&fit=crop",
+    "releaseDate": "2025-01-05"
+  }
+]
