@@ -104,12 +104,12 @@ const Turntable: React.FC<TurntableProps> = ({
       onseek: () => {
         updateProgress();
       },
-      onloaderror: (id, error) => {
+      onloaderror: ( error) => {
         console.error('Audio load error:', error);
         setActualIsPlaying(false);
         onPlayingChange(false);
       },
-      onplayerror: (id, error) => {
+      onplayerror: ( error) => {
         console.error('Audio play error:', error);
         setActualIsPlaying(false);
         onPlayingChange(false);

@@ -6,7 +6,7 @@ interface VinylSleeveProps {
   isVisible: boolean;
 }
 
-const VinylSleeve: React.FC<VinylSleeveProps> = ({ imageUrl, isVisible }) => {
+const VinylSleeve: React.FC<VinylSleeveProps> = ({ isVisible }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}

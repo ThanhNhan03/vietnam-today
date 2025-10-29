@@ -21,7 +21,6 @@ const EpisodeSelector: React.FC<EpisodeSelectorProps> = ({
   episodes,
   currentIndex,
   onSelect,
-  isPlaying,
 }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
