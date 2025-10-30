@@ -9,21 +9,12 @@
   "releaseDate": "2025-10-23"
   },
   {
-    "id": 2,
-    "title": "Thay đổi xã hội qua công nghệ số",
-    "description": "Thảo luận về tác động của chuyển đổi số đến cuộc sống hàng ngày của người dân Việt Nam.",
-    "duration": 2400,
-    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=500&fit=crop",
-    "releaseDate": "2025-01-10"
-  },
-  {
-    "id": 3,
-    "title": "Văn hóa truyền thống gặp gỡ hiện đại",
-    "description": "Cách các thế hệ trẻ Việt Nam vừa giữ gìn truyền thống vừa đón nhận sự thay đổi.",
-    "duration": 2700,
-    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
-    "imageUrl": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=500&h=500&fit=crop",
-    "releaseDate": "2025-01-05"
+  "id": 2,
+  "title": "Tăng trưởng nhanh – Thành công và những câu hỏi còn bỏ ngỏ cho tương lai",
+  "description": "Tập 2 của podcast 'Nghe Việt Nam Thay Đổi' nhìn lại giai đoạn 2006–2015 – thời kỳ Việt Nam tăng trưởng kinh tế ấn tượng sau khi gia nhập WTO. Cùng khám phá những thành tựu nổi bật, những con số biết nói, và cả những thách thức đặt ra cho con đường phát triển bền vững trong tương lai.",
+  "duration": 140,
+  "audioUrl": "https://res.cloudinary.com/dw9cr6zyk/video/upload/v1761788982/1030_odqgob.mp3",
+  "imageUrl": "https://res.cloudinary.com/dw9cr6zyk/image/upload/v1761789117/unnamed_2_hrux8f.jpg",
+  "releaseDate": "2025-01-22"
   }
 ]
