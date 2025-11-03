@@ -1,0 +1,80 @@
+[
+  {
+    "year": "2006",
+    "title": "Gia nhập WTO",
+    "description": "Việt Nam chính thức trở thành thành viên thứ 150 của Tổ chức Thương mại Thế giới",
+    "details": "Đây là bước ngoặt lịch sử đánh dấu sự hội nhập sâu rộng của Việt Nam vào nền kinh tế thế giới. Việc gia nhập WTO mở ra cơ hội xuất khẩu lớn, thu hút FDI mạnh mẽ, đồng thời đặt ra yêu cầu cải cách thể chế và nâng cao năng lực cạnh tranh. Chính phủ đã phải điều chỉnh nhiều chính sách để phù hợp với cam kết quốc tế, tạo môi trường kinh doanh minh bạch hơn.",
+    "category": "integration",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800",
+    "stats": [
+      { "label": "Kim ngạch xuất khẩu", "value": "39.8 tỷ USD" },
+      { "label": "FDI thu hút", "value": "10.2 tỷ USD" },
+      { "label": "Tăng trưởng GDP", "value": "8.2%" }
+    ]
+  },
+  {
+    "year": "2007-2008",
+    "title": "Bùng nổ kinh tế & Khủng hoảng",
+    "description": "Tăng trưởng nóng 8.5% nhưng đối mặt lạm phát cao và khủng hoảng tài chính toàn cầu",
+    "details": "Giai đoạn này Việt Nam trải qua cả cơ hội và thách thức. Kinh tế tăng trưởng nóng với FDI tăng vượt bậc, thị trường bất động sản và chứng khoán sôi động. Tuy nhiên, lạm phát lên đến 23% năm 2008, tạo áp lực lớn lên đời sống người dân. Khủng hoảng tài chính toàn cầu buộc Chính phủ phải có gói kích cầu 1 tỷ USD để ổn định kinh tế vĩ mô, bảo vệ người lao động và duy trì tăng trưởng.",
+    "category": "economy",
+    "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800",
+    "stats": [
+      { "label": "Lạm phát đỉnh", "value": "23%" },
+      { "label": "Gói kích cầu", "value": "1 tỷ USD" },
+      { "label": "Tăng trưởng GDP", "value": "6.3%" }
+    ]
+  },
+  {
+    "year": "2009-2010",
+    "title": "Ổn định & Phục hồi",
+    "description": "Kiểm soát lạm phát, cải cách doanh nghiệp nhà nước và đầu tư cơ sở hạ tầng",
+    "details": "Chính phủ thực hiện chính sách tiền tệ thắt chặt để kiểm soát lạm phát xuống 7%. Đồng thời, đẩy mạnh cải cách doanh nghiệp nhà nước, tái cơ cấu ngân hàng và đầu tư mạnh vào cơ sở hạ tầng giao thông, điện lực. Chính sách an sinh xã hội được tăng cường với mục tiêu bảo vệ người nghèo và lao động yếu thế trong bối cảnh khủng hoảng.",
+    "category": "policy",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800",
+    "stats": [
+      { "label": "Lạm phát giảm", "value": "7%" },
+      { "label": "Đầu tư công", "value": "20% GDP" },
+      { "label": "Tăng trưởng GDP", "value": "6.8%" }
+    ]
+  },
+  {
+    "year": "2011-2012",
+    "title": "Cải cách Thể chế",
+    "description": "Nghị quyết 11 về cải thiện môi trường kinh doanh và nâng cao năng lực cạnh tranh",
+    "details": "Chính phủ ban hành Nghị quyết 11/NQ-CP về cải cách thể chế, cắt giảm thủ tục hành chính, tạo môi trường thuận lợi cho doanh nghiệp. Tái cơ cấu nền kinh tế theo hướng nâng cao năng suất, chất lượng và hiệu quả. Đặc biệt chú trọng phát triển kinh tế tư nhân, coi đây là động lực quan trọng của nền kinh tế thị trường định hướng xã hội chủ nghĩa.",
+    "category": "policy",
+    "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800",
+    "stats": [
+      { "label": "Doanh nghiệp mới", "value": "+60,000" },
+      { "label": "Cải thiện xếp hạng", "value": "+8 bậc" },
+      { "label": "Tăng trưởng GDP", "value": "5.9%" }
+    ]
+  },
+  {
+    "year": "2013-2014",
+    "title": "Tái cơ cấu Kinh tế",
+    "description": "Tái cơ cấu doanh nghiệp nhà nước, hệ thống ngân hàng và đầu tư công",
+    "details": "Ba trụ cột tái cơ cấu: doanh nghiệp nhà nước (cổ phần hóa, sắp xếp lại), ngân hàng (xử lý nợ xấu, tăng vốn), đầu tư công (nâng cao hiệu quả, chống thất thoát). Đồng thời, đẩy mạnh phát triển kinh tế tri thức, công nghệ cao và bảo vệ môi trường. Chính sách xã hội tập trung giảm nghèo bền vững, y tế và giáo dục cho mọi người.",
+    "category": "economy",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
+    "stats": [
+      { "label": "Cổ phần hóa", "value": "289 DN" },
+      { "label": "Nợ xấu xử lý", "value": "42 nghìn tỷ" },
+      { "label": "Tăng trưởng GDP", "value": "6.0%" }
+    ]
+  },
+  {
+    "year": "2015",
+    "title": "Hội nhập Sâu rộng",
+    "description": "Ký kết TPP, ASEAN Economic Community và cam kết giảm nghèo bền vững",
+    "details": "Việt Nam tham gia các hiệp định thương mại thế hệ mới như TPP (nay là CPTPP), AEC, tạo động lực mới cho xuất khẩu và cải cách. GDP bình quân đầu người đạt hơn 2,000 USD. Tỷ lệ hộ nghèo giảm xuống dưới 5%. Chính phủ cam kết phát triển bền vững, bảo vệ môi trường và công bằng xã hội, thể hiện rõ định hướng xã hội chủ nghĩa trong hội nhập quốc tế.",
+    "category": "integration",
+    "image": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800",
+    "stats": [
+      { "label": "GDP/người", "value": "2,100 USD" },
+      { "label": "Tỷ lệ nghèo", "value": "4.9%" },
+      { "label": "Tăng trưởng GDP", "value": "6.7%" }
+    ]
+  }
+]

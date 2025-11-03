@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Turntable from './components/Turntable';
 import EpisodeSelector from './components/EpisodeSelector';
 import Sidebar from './components/Sidebar';
+import Timeline from './components/Timeline';
 import podcastData from './data/podcasts.json';
 import './App.css';
 
@@ -129,10 +130,7 @@ function App() {
         )}
 
         {currentPage === 'content' && (
-          <motion.div variants={itemVariants} className="page-placeholder">
-            <h1>Nội Dung</h1>
-            <p>Trang này đang trong quá trình phát triển...</p>
-          </motion.div>
+          <Timeline />
         )}
 
         {currentPage === 'qa' && (
