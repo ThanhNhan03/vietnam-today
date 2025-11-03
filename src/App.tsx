@@ -4,6 +4,7 @@ import Turntable from './components/Turntable';
 import EpisodeSelector from './components/EpisodeSelector';
 import Sidebar from './components/Sidebar';
 import Timeline from './components/Timeline';
+import QnA from './components/QnA';
 import podcastData from './data/podcasts.json';
 import './App.css';
 
@@ -134,10 +135,7 @@ function App() {
         )}
 
         {currentPage === 'qa' && (
-          <motion.div variants={itemVariants} className="page-placeholder">
-            <h1>Q&A</h1>
-            <p>Trang này đang trong quá trình phát triển...</p>
-          </motion.div>
+          <QnA />
         )}
       </motion.div>
     </div>
