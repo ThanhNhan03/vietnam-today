@@ -1,20 +1,48 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, MessageCircle, User, Clock } from 'lucide-react';
+import { database } from '../lib/firebase';
+import { ref, push, onValue, query, orderByChild, limitToLast } from 'firebase/database';
 
 interface Question {
-  id: number;
+  id: string;
   name: string;
   question: string;
-  timestamp: Date;
+  timestamp: number;
 }
 
 export default function QnA() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [name, setName] = useState('');
   const [question, setQuestion] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Load questions from Firebase
+  useEffect(() => {
+    const questionsRef = ref(database, 'questions');
+    const questionsQuery = query(questionsRef, orderByChild('timestamp'), limitToLast(50));
+
+    const unsubscribe = onValue(questionsQuery, (snapshot) => {
+      const data = snapshot.val();
+      if (data) {
+        const questionsList: Question[] = Object.entries(data).map(([key, value]: [string, any]) => ({
+          id: key,
+          name: value.name,
+          question: value.question,
+          timestamp: value.timestamp,
+        }));
+        // Sort by timestamp descending (newest first)
+        questionsList.sort((a, b) => b.timestamp - a.timestamp);
+        setQuestions(questionsList);
+      } else {
+        setQuestions([]);
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!name.trim() || !question.trim()) {
@@ -22,26 +50,38 @@ export default function QnA() {
       return;
     }
 
-    const newQuestion: Question = {
-      id: Date.now(),
-      name: name.trim(),
-      question: question.trim(),
-      timestamp: new Date(),
-    };
+    setIsSubmitting(true);
 
-    setQuestions((prev) => [newQuestion, ...prev]);
-    setName('');
-    setQuestion('');
+    try {
+      const questionsRef = ref(database, 'questions');
+      const newQuestion = {
+        name: name.trim(),
+        question: question.trim(),
+        timestamp: Date.now(),
+      };
+
+      await push(questionsRef, newQuestion);
+      
+      // Clear form
+      setName('');
+      setQuestion('');
+      alert('Câu hỏi của bạn đã được gửi thành công! 🎉');
+    } catch (error) {
+      console.error('Error adding question:', error);
+      alert('Có lỗi xảy ra. Vui lòng thử lại!');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  const formatTime = (date: Date) => {
-    const now = new Date();
-    const diff = Math.floor((now.getTime() - date.getTime()) / 1000);
+  const formatTime = (timestamp: number) => {
+    const now = Date.now();
+    const diff = Math.floor((now - timestamp) / 1000);
 
     if (diff < 60) return 'Vừa xong';
     if (diff < 3600) return `${Math.floor(diff / 60)} phút trước`;
     if (diff < 86400) return `${Math.floor(diff / 3600)} giờ trước`;
-    return date.toLocaleDateString('vi-VN');
+    return new Date(timestamp).toLocaleDateString('vi-VN');
   };
 
   return (
@@ -114,11 +154,13 @@ export default function QnA() {
           <motion.button
             type="submit"
             className="qna-submit-btn"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
+            whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
+            whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
+            disabled={isSubmitting}
+            style={{ opacity: isSubmitting ? 0.6 : 1, cursor: isSubmitting ? 'not-allowed' : 'pointer' }}
           >
             <Send size={20} />
-            Gửi câu hỏi
+            {isSubmitting ? 'Đang gửi...' : 'Gửi câu hỏi'}
           </motion.button>
         </form>
       </motion.div>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "784039966313",
+    "firebase_url": "https://test-b48a7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "test-b48a7",
+    "storage_bucket": "test-b48a7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784039966313:android:df14a613593e41f60e54f8",
+        "android_client_info": {
+          "package_name": "com.fpt.test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsSWQFlGwkR_uKAc2KhK3kuGNZdbcd0ls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
