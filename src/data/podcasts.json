@@ -16,5 +16,14 @@
   "audioUrl": "https://res.cloudinary.com/dw9cr6zyk/video/upload/v1761788982/1030_odqgob.mp3",
   "imageUrl": "https://res.cloudinary.com/dw9cr6zyk/image/upload/v1761789117/unnamed_2_hrux8f.jpg",
   "releaseDate": "2025-01-22"
-  }
+  },
+ {
+  "id": 3,
+  "title": "Giữ vững định hướng xã hội chủ nghĩa – Thách thức trong thời kỳ hội nhập",
+  "description": "Tập 3 của podcast 'Nghe Việt Nam Thay Đổi' nói về hành trình Việt Nam vừa phát triển kinh tế nhanh, vừa giữ vững định hướng xã hội chủ nghĩa trong giai đoạn 2006–2015. Qua các chính sách về giáo dục, y tế, phúc lợi và giảm nghèo, tập này lý giải cách Việt Nam cân bằng giữa tăng trưởng, công bằng và bản sắc dân tộc giữa làn sóng hội nhập toàn cầu.",
+  "duration": 240,
+  "audioUrl": "https://res.cloudinary.com/dw9cr6zyk/video/upload/1031_ovkiyx.mp3",
+  "imageUrl": "https://res.cloudinary.com/dw9cr6zyk/image/upload/Gemini_Generated_Image_g6mgikg6mgikg6mg_s3vzly.png",
+  "releaseDate": "2025-01-29"
+}
 ]
