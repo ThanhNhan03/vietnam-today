@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, TrendingUp, Users, Factory, GraduationCap, Heart } from 'lucide-react';
+import { Calendar, TrendingUp, Users, Factory, GraduationCap, Heart, ExternalLink } from 'lucide-react';
 import timelineDataJson from '../data/timeline.json';
 
 interface TimelineEvent {
@@ -11,9 +11,9 @@ interface TimelineEvent {
   details: string;
   category: 'economy' | 'social' | 'policy' | 'integration';
   image: string;
-  stats?: {
-    label: string;
-    value: string;
+  sources?: {
+    title: string;
+    url: string;
   }[];
 }
 
@@ -161,62 +161,65 @@ export default function Timeline() {
       </div>
 
       {/* Detail Modal */}
-      {createPortal(
+      {selectedEvent && createPortal(
         <AnimatePresence>
-          {selectedEvent && (
-            <>
-              <motion.div
-                className="timeline-modal-overlay"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                onClick={() => setSelectedEvent(null)}
-              />
-              <motion.div
-                className="timeline-modal"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ type: 'spring', damping: 25 }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <button 
-                  className="timeline-modal-close"
-                  onClick={() => setSelectedEvent(null)}
-                >
-                  ✕
-                </button>
+          <motion.div
+            className="timeline-modal-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedEvent(null)}
+          />
+          <motion.div
+            className="timeline-modal"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+          >
+            <button 
+              className="timeline-modal-close"
+              onClick={() => setSelectedEvent(null)}
+            >
+              ✕
+            </button>
 
-                <div className="timeline-modal-content">
-                  <div className="timeline-modal-image">
-                    <img src={selectedEvent.image} alt={selectedEvent.title} />
-                    <div className="timeline-modal-badge" style={{ backgroundColor: categoryColors[selectedEvent.category] }}>
-                      {selectedEvent.year}
+            <div className="timeline-modal-content">
+              <div className="timeline-modal-image">
+                <img src={selectedEvent.image} alt={selectedEvent.title} />
+                <div className="timeline-modal-badge" style={{ backgroundColor: categoryColors[selectedEvent.category] }}>
+                  {selectedEvent.year}
+                </div>
+              </div>
+
+              <div className="timeline-modal-body">
+                <h2 className="timeline-modal-title">{selectedEvent.title}</h2>
+                <p className="timeline-modal-description">{selectedEvent.description}</p>
+                <p className="timeline-modal-details">{selectedEvent.details}</p>
+
+                {selectedEvent.sources && selectedEvent.sources.length > 0 && (
+                  <div className="timeline-modal-sources">
+                    <h3 className="sources-title">Nguồn tham khảo</h3>
+                    <div className="sources-list">
+                      {selectedEvent.sources.map((source, idx) => (
+                        <a 
+                          key={idx} 
+                          href={source.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="source-item"
+                          style={{ borderLeftColor: categoryColors[selectedEvent.category] }}
+                        >
+                          <span className="source-title">{source.title}</span>
+                          <ExternalLink size={16} className="source-icon" />
+                        </a>
+                      ))}
                     </div>
                   </div>
-
-                  <div className="timeline-modal-body">
-                    <h2 className="timeline-modal-title">{selectedEvent.title}</h2>
-                    <p className="timeline-modal-description">{selectedEvent.description}</p>
-                    <p className="timeline-modal-details">{selectedEvent.details}</p>
-
-                    {selectedEvent.stats && (
-                      <div className="timeline-modal-stats">
-                        {selectedEvent.stats.map((stat, idx) => (
-                          <div key={idx} className="stat-item">
-                            <div className="stat-value" style={{ color: categoryColors[selectedEvent.category] }}>
-                              {stat.value}
-                            </div>
-                            <div className="stat-label">{stat.label}</div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </motion.div>
-            </>
-          )}
+                )}
+              </div>
+            </div>
+          </motion.div>
         </AnimatePresence>,
         document.body
       )}

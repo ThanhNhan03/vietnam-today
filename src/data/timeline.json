@@ -1,80 +1,80 @@
 [
   {
     "year": "2006",
-    "title": "Gia nhập WTO",
-    "description": "Việt Nam chính thức trở thành thành viên thứ 150 của Tổ chức Thương mại Thế giới",
-    "details": "Đây là bước ngoặt lịch sử đánh dấu sự hội nhập sâu rộng của Việt Nam vào nền kinh tế thế giới. Việc gia nhập WTO mở ra cơ hội xuất khẩu lớn, thu hút FDI mạnh mẽ, đồng thời đặt ra yêu cầu cải cách thể chế và nâng cao năng lực cạnh tranh. Chính phủ đã phải điều chỉnh nhiều chính sách để phù hợp với cam kết quốc tế, tạo môi trường kinh doanh minh bạch hơn.",
+    "title": "Bước vào thời kỳ hội nhập – Việt Nam gia nhập WTO",
+    "description": "Cột mốc mở ra kỷ nguyên mới trong quá trình hội nhập quốc tế và cải cách kinh tế của Việt Nam.",
+    "details": "Việt Nam chính thức trở thành thành viên thứ 150 của Tổ chức Thương mại Thế giới (WTO) vào tháng 11 năm 2006. Đây là sự kiện đánh dấu bước ngoặt lớn, khẳng định quyết tâm hội nhập sâu rộng của đất nước. Việc gia nhập WTO giúp Việt Nam mở rộng thị trường xuất khẩu, thu hút vốn FDI, và buộc hệ thống pháp luật, thể chế kinh tế phải điều chỉnh để phù hợp chuẩn mực quốc tế – đặt nền tảng cho giai đoạn tăng trưởng mạnh sau đó.",
     "category": "integration",
     "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800",
-    "stats": [
-      { "label": "Kim ngạch xuất khẩu", "value": "39.8 tỷ USD" },
-      { "label": "FDI thu hút", "value": "10.2 tỷ USD" },
-      { "label": "Tăng trưởng GDP", "value": "8.2%" }
+    "sources": [
+      { "title": "WTO - Viet Nam Member Information", "url": "https://www.wto.org/english/thewto_e/countries_e/vietnam_e.htm" },
+      { "title": "Bộ Công Thương - Việt Nam và tiến trình hội nhập WTO", "url": "https://moit.gov.vn" },
+      { "title": "Tổng cục Thống kê - Niên giám 2006", "url": "https://www.gso.gov.vn" }
     ]
   },
   {
     "year": "2007-2008",
-    "title": "Bùng nổ kinh tế & Khủng hoảng",
-    "description": "Tăng trưởng nóng 8.5% nhưng đối mặt lạm phát cao và khủng hoảng tài chính toàn cầu",
-    "details": "Giai đoạn này Việt Nam trải qua cả cơ hội và thách thức. Kinh tế tăng trưởng nóng với FDI tăng vượt bậc, thị trường bất động sản và chứng khoán sôi động. Tuy nhiên, lạm phát lên đến 23% năm 2008, tạo áp lực lớn lên đời sống người dân. Khủng hoảng tài chính toàn cầu buộc Chính phủ phải có gói kích cầu 1 tỷ USD để ổn định kinh tế vĩ mô, bảo vệ người lao động và duy trì tăng trưởng.",
+    "title": "Tăng trưởng nhanh và những cú sốc đầu tiên",
+    "description": "Sau khi gia nhập WTO, nền kinh tế tăng trưởng mạnh nhưng cũng đối mặt với khủng hoảng tài chính toàn cầu.",
+    "details": "Năm 2007–2008, Việt Nam ghi nhận mức tăng trưởng GDP trên 8%, FDI đổ vào mạnh mẽ và thị trường chứng khoán bùng nổ. Tuy nhiên, khủng hoảng tài chính toàn cầu đã khiến lạm phát tăng cao, lên tới hơn 20% năm 2008. Chính phủ phải tung ra gói kích cầu để bảo đảm ổn định kinh tế vĩ mô và hỗ trợ doanh nghiệp, thể hiện nỗ lực giữ vững định hướng xã hội chủ nghĩa trong bối cảnh toàn cầu bất ổn.",
     "category": "economy",
     "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800",
-    "stats": [
-      { "label": "Lạm phát đỉnh", "value": "23%" },
-      { "label": "Gói kích cầu", "value": "1 tỷ USD" },
-      { "label": "Tăng trưởng GDP", "value": "6.3%" }
+    "sources": [
+      { "title": "IMF - Global Financial Crisis Impact on Vietnam", "url": "https://www.imf.org" },
+      { "title": "Ngân hàng Nhà nước - Báo cáo lạm phát 2008", "url": "https://www.sbv.gov.vn" },
+      { "title": "Chính phủ - Chính sách kích cầu kinh tế 2008", "url": "https://chinhphu.vn" }
     ]
   },
   {
     "year": "2009-2010",
-    "title": "Ổn định & Phục hồi",
-    "description": "Kiểm soát lạm phát, cải cách doanh nghiệp nhà nước và đầu tư cơ sở hạ tầng",
-    "details": "Chính phủ thực hiện chính sách tiền tệ thắt chặt để kiểm soát lạm phát xuống 7%. Đồng thời, đẩy mạnh cải cách doanh nghiệp nhà nước, tái cơ cấu ngân hàng và đầu tư mạnh vào cơ sở hạ tầng giao thông, điện lực. Chính sách an sinh xã hội được tăng cường với mục tiêu bảo vệ người nghèo và lao động yếu thế trong bối cảnh khủng hoảng.",
+    "title": "Phục hồi & Ổn định sau khủng hoảng",
+    "description": "Tái cơ cấu kinh tế, kiềm chế lạm phát, đầu tư hạ tầng và duy trì an sinh xã hội.",
+    "details": "Sau cú sốc tài chính, Việt Nam thực hiện chính sách thắt chặt tiền tệ, kiềm chế lạm phát và phục hồi dần sản xuất. Chính phủ tăng đầu tư vào giao thông, năng lượng và khu công nghiệp, đồng thời thúc đẩy chương trình giảm nghèo, bảo đảm an sinh xã hội. Đây là giai đoạn Việt Nam đặt lại nền tảng cho phát triển ổn định và bền vững hơn.",
     "category": "policy",
     "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800",
-    "stats": [
-      { "label": "Lạm phát giảm", "value": "7%" },
-      { "label": "Đầu tư công", "value": "20% GDP" },
-      { "label": "Tăng trưởng GDP", "value": "6.8%" }
+    "sources": [
+      { "title": "World Bank - Vietnam Economic Update 2010", "url": "https://www.worldbank.org" },
+      { "title": "Bộ Kế hoạch và Đầu tư - Báo cáo phục hồi kinh tế 2010", "url": "https://www.mpi.gov.vn" },
+      { "title": "Tổng cục Thống kê - Niên giám 2010", "url": "https://www.gso.gov.vn" }
     ]
   },
   {
     "year": "2011-2012",
-    "title": "Cải cách Thể chế",
-    "description": "Nghị quyết 11 về cải thiện môi trường kinh doanh và nâng cao năng lực cạnh tranh",
-    "details": "Chính phủ ban hành Nghị quyết 11/NQ-CP về cải cách thể chế, cắt giảm thủ tục hành chính, tạo môi trường thuận lợi cho doanh nghiệp. Tái cơ cấu nền kinh tế theo hướng nâng cao năng suất, chất lượng và hiệu quả. Đặc biệt chú trọng phát triển kinh tế tư nhân, coi đây là động lực quan trọng của nền kinh tế thị trường định hướng xã hội chủ nghĩa.",
+    "title": "Cải cách thể chế & nâng cao năng lực cạnh tranh",
+    "description": "Nghị quyết 11/NQ-CP về kiềm chế lạm phát, ổn định kinh tế và cải thiện môi trường kinh doanh.",
+    "details": "Chính phủ ban hành Nghị quyết 11/NQ-CP nhằm kiểm soát lạm phát, tái cơ cấu đầu tư công và cải thiện môi trường kinh doanh. Đây là giai đoạn đặt trọng tâm vào chất lượng tăng trưởng thay vì tốc độ. Kinh tế tư nhân được khuyến khích phát triển, cùng với nỗ lực xây dựng nền kinh tế thị trường định hướng xã hội chủ nghĩa – vừa hiện đại, vừa bền vững.",
     "category": "policy",
     "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800",
-    "stats": [
-      { "label": "Doanh nghiệp mới", "value": "+60,000" },
-      { "label": "Cải thiện xếp hạng", "value": "+8 bậc" },
-      { "label": "Tăng trưởng GDP", "value": "5.9%" }
+    "sources": [
+      { "title": "Chính phủ - Nghị quyết 11/NQ-CP năm 2011", "url": "https://chinhphu.vn" },
+      { "title": "World Bank - Doing Business Vietnam 2012", "url": "https://openknowledge.worldbank.org" },
+      { "title": "VCCI - Báo cáo năng lực cạnh tranh 2012", "url": "https://vcci.com.vn" }
     ]
   },
   {
     "year": "2013-2014",
-    "title": "Tái cơ cấu Kinh tế",
-    "description": "Tái cơ cấu doanh nghiệp nhà nước, hệ thống ngân hàng và đầu tư công",
-    "details": "Ba trụ cột tái cơ cấu: doanh nghiệp nhà nước (cổ phần hóa, sắp xếp lại), ngân hàng (xử lý nợ xấu, tăng vốn), đầu tư công (nâng cao hiệu quả, chống thất thoát). Đồng thời, đẩy mạnh phát triển kinh tế tri thức, công nghệ cao và bảo vệ môi trường. Chính sách xã hội tập trung giảm nghèo bền vững, y tế và giáo dục cho mọi người.",
+    "title": "Tái cơ cấu nền kinh tế – Hướng đến phát triển bền vững",
+    "description": "Ba trụ cột tái cơ cấu: doanh nghiệp nhà nước, ngân hàng, và đầu tư công.",
+    "details": "Chính phủ triển khai chương trình tái cơ cấu toàn diện: cổ phần hóa doanh nghiệp nhà nước, xử lý nợ xấu ngân hàng và nâng cao hiệu quả đầu tư công. Đồng thời, chú trọng đổi mới sáng tạo, phát triển công nghệ số, giáo dục và bảo vệ môi trường. Đây cũng là thời kỳ khởi đầu cho chiến lược chuyển đổi số và hội nhập thế hệ mới.",
     "category": "economy",
     "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
-    "stats": [
-      { "label": "Cổ phần hóa", "value": "289 DN" },
-      { "label": "Nợ xấu xử lý", "value": "42 nghìn tỷ" },
-      { "label": "Tăng trưởng GDP", "value": "6.0%" }
+    "sources": [
+      { "title": "Ngân hàng Nhà nước - Tái cơ cấu hệ thống ngân hàng", "url": "https://sbv.gov.vn" },
+      { "title": "Uỷ ban Quản lý vốn Nhà nước - Cổ phần hóa DNNN", "url": "https://cmsc.gov.vn" },
+      { "title": "ADB - Vietnam Economic Report 2014", "url": "https://www.adb.org" }
     ]
   },
   {
     "year": "2015",
-    "title": "Hội nhập Sâu rộng",
-    "description": "Ký kết TPP, ASEAN Economic Community và cam kết giảm nghèo bền vững",
-    "details": "Việt Nam tham gia các hiệp định thương mại thế hệ mới như TPP (nay là CPTPP), AEC, tạo động lực mới cho xuất khẩu và cải cách. GDP bình quân đầu người đạt hơn 2,000 USD. Tỷ lệ hộ nghèo giảm xuống dưới 5%. Chính phủ cam kết phát triển bền vững, bảo vệ môi trường và công bằng xã hội, thể hiện rõ định hướng xã hội chủ nghĩa trong hội nhập quốc tế.",
+    "title": "Hội nhập sâu rộng & tầm nhìn mới",
+    "description": "Tham gia AEC và TPP, khẳng định vị thế Việt Nam trong khu vực.",
+    "details": "Việt Nam ký kết và tham gia các hiệp định thương mại thế hệ mới như Hiệp định Đối tác xuyên Thái Bình Dương (TPP, nay là CPTPP) và Cộng đồng Kinh tế ASEAN (AEC). GDP bình quân đầu người đạt hơn 2.000 USD, tỷ lệ hộ nghèo giảm còn dưới 5%. Giai đoạn này thể hiện rõ sự chuyển mình mạnh mẽ: phát triển kinh tế nhanh nhưng vẫn duy trì định hướng xã hội chủ nghĩa, hướng tới tăng trưởng bao trùm và bền vững.",
     "category": "integration",
     "image": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800",
-    "stats": [
-      { "label": "GDP/người", "value": "2,100 USD" },
-      { "label": "Tỷ lệ nghèo", "value": "4.9%" },
-      { "label": "Tăng trưởng GDP", "value": "6.7%" }
+    "sources": [
+      { "title": "ASEAN - ASEAN Economic Community 2015", "url": "https://asean.org" },
+      { "title": "Bộ Công Thương - Hiệp định TPP và tác động", "url": "https://moit.gov.vn" },
+      { "title": "Bộ Lao động - Báo cáo giảm nghèo 2015", "url": "https://molisa.gov.vn" }
     ]
   }
 ]
