@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Send, MessageCircle, User, Clock } from 'lucide-react';
+import { Send, MessageCircle, User, Clock, Sparkles } from 'lucide-react';
 import { database } from '../lib/firebase';
 import { ref, push, onValue, query, orderByChild, limitToLast } from 'firebase/database';
+import { generateAnswer } from '../utils/gemini';
 
 interface Question {
   id: string;
@@ -16,6 +17,9 @@ export default function QnA() {
   const [name, setName] = useState('');
   const [question, setQuestion] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [expandedQuestionId, setExpandedQuestionId] = useState<string | null>(null);
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [loadingAnswers, setLoadingAnswers] = useState<Record<string, boolean>>({});
 
   // Load questions from Firebase
   useEffect(() => {
@@ -71,6 +75,46 @@ export default function QnA() {
       alert('Có lỗi xảy ra. Vui lòng thử lại!');
     } finally {
       setIsSubmitting(false);
+    }
+  };
+
+  const handleGetAnswer = async (questionId: string, questionText: string) => {
+    // Toggle expanded state
+    if (expandedQuestionId === questionId) {
+      setExpandedQuestionId(null);
+      return;
+    }
+
+    setExpandedQuestionId(questionId);
+
+    // If answer already exists, just show it
+    if (answers[questionId]) {
+      return;
+    }
+
+    // Generate new answer
+    setLoadingAnswers(prev => ({ ...prev, [questionId]: true }));
+    
+    try {
+      // Show temporary waiting message
+      setAnswers(prev => ({ 
+        ...prev, 
+        [questionId]: '⏳ Đang xử lý câu hỏi, vui lòng đợi một chút...' 
+      }));
+      
+      const answer = await generateAnswer(questionText);
+      setAnswers(prev => ({ ...prev, [questionId]: answer }));
+    } catch (error: any) {
+      console.error('Error generating answer:', error);
+      
+      // Show detailed error message
+      const errorMessage = error.message || 'Xin lỗi, hiện tại không thể tạo câu trả lời. Vui lòng thử lại sau.';
+      setAnswers(prev => ({ 
+        ...prev, 
+        [questionId]: `⚠️ ${errorMessage}` 
+      }));
+    } finally {
+      setLoadingAnswers(prev => ({ ...prev, [questionId]: false }));
     }
   };
 
@@ -218,9 +262,51 @@ export default function QnA() {
                   <div className="qna-question-body">
                     <p>{q.question}</p>
                   </div>
+                  
                   <div className="qna-question-footer">
-                    <span className="qna-status">Đang chờ trả lời</span>
+                    <motion.button
+                      className="qna-answer-btn"
+                      onClick={() => handleGetAnswer(q.id, q.question)}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      disabled={loadingAnswers[q.id]}
+                    >
+                      <Sparkles size={16} />
+                      {loadingAnswers[q.id] 
+                        ? 'Đang tạo câu trả lời...' 
+                        : expandedQuestionId === q.id 
+                          ? 'Ẩn câu trả lời' 
+                          : 'Xem câu trả lời'}
+                    </motion.button>
                   </div>
+
+                  {/* AI Answer */}
+                  <AnimatePresence>
+                    {expandedQuestionId === q.id && (
+                      <motion.div
+                        className="qna-answer-section"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        <div className="qna-answer-header">
+                          <Sparkles size={18} />
+                          <span>Câu trả lời</span>
+                        </div>
+                        {loadingAnswers[q.id] ? (
+                          <div className="qna-answer-loading">
+                            <div className="loading-spinner"></div>
+                            <p>Đang phân tích</p>
+                          </div>
+                        ) : (
+                          <div className="qna-answer-content">
+                            <p>{answers[q.id]}</p>
+                          </div>
+                        )}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </motion.div>
               ))}
             </AnimatePresence>
