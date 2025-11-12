@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Home, FileText, MessageCircle, Menu, X, Info } from 'lucide-react';
+import { Home, FileText, MessageCircle, Menu, X, Info, Brain } from 'lucide-react';
 
 interface SidebarProps {
   currentPage: string;
@@ -13,6 +13,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPage, onPageChange }) => {
   const menuItems = [
     { id: 'podcast', label: 'Podcast', icon: Home },
     { id: 'content', label: 'Nội Dung', icon: FileText },
+    { id: 'quiz', label: 'Quiz', icon: Brain },
     { id: 'qa', label: 'Q&A', icon: MessageCircle },
     { id: 'about', label: 'Về chúng tôi', icon: Info },
   ];
@@ -50,7 +51,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPage, onPageChange }) => {
             <div className="logo-icon">🎙️</div>
             <div className="logo-text">
               <h2>Việt Nam</h2>
-              <p>Thay Đổi</p>
+              <h2>Thay Đổi</h2>
             </div>
           </motion.div>
         </div>

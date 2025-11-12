@@ -4,6 +4,7 @@ import Turntable from './components/Turntable';
 import EpisodeSelector from './components/EpisodeSelector';
 import Sidebar from './components/Sidebar';
 import Timeline from './components/Timeline';
+import Quiz from './components/Quiz';
 import QnA from './components/QnA';
 import About from './components/About';
 import podcastData from './data/podcasts.json';
@@ -133,6 +134,10 @@ function App() {
 
         {currentPage === 'content' && (
           <Timeline />
+        )}
+
+        {currentPage === 'quiz' && (
+          <Quiz />
         )}
 
         {currentPage === 'qa' && (
