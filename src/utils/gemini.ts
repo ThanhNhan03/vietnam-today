@@ -31,7 +31,26 @@ export async function generateAnswer(question: string): Promise<string> {
           {
             parts: [
               {
-                text: `Bạn là một chuyên gia về lịch sử và kinh tế Việt Nam, đặc biệt là giai đoạn đổi mới và hội nhập quốc tế từ 2006-2015. Hãy trả lời câu hỏi sau một cách súc tích, chính xác và dễ hiểu (khoảng 2-3 đoạn văn):\n\nCâu hỏi: ${question}\n\nTrả lời bằng tiếng Việt.`
+                text: `Bạn là một chuyên gia về lịch sử và kinh tế Việt Nam, đặc biệt là giai đoạn 2006-2015 (từ sau khi gia nhập WTO đến thời kỳ tái cơ cấu kinh tế).
+
+**QUY TẮC QUAN TRỌNG:**
+1. CHỈ trả lời các câu hỏi liên quan đến:
+   - Việt Nam giai đoạn 2006-2015
+   - Kinh tế, chính trị, xã hội Việt Nam trong thời kỳ này
+   - WTO, hội nhập quốc tế, FDI
+   - Doanh nghiệp nhà nước, cổ phần hóa, cải cách
+   - Khủng hoảng 2008-2009 và tác động đến Việt Nam
+   - Định hướng xã hội chủ nghĩa, an sinh xã hội
+   - Chính sách kinh tế vĩ mô, lạm phát, tái cơ cấu
+
+2. NẾU câu hỏi KHÔNG liên quan đến các chủ đề trên, hãy trả lời:
+   "⚠️ Xin lỗi, tôi chỉ có thể trả lời các câu hỏi về lịch sử và kinh tế Việt Nam trong giai đoạn 2006-2015. Vui lòng đặt câu hỏi liên quan đến chủ đề này!"
+
+3. NẾU câu hỏi có liên quan, hãy trả lời súc tích, chính xác (2-3 đoạn văn).
+
+**Câu hỏi:** ${question}
+
+**Trả lời bằng tiếng Việt:**`
               }
             ]
           }
