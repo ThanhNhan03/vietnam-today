@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Home, FileText, MessageCircle, Menu, X } from 'lucide-react';
+import { Home, FileText, MessageCircle, Menu, X, Info } from 'lucide-react';
 
 interface SidebarProps {
   currentPage: string;
@@ -14,6 +14,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPage, onPageChange }) => {
     { id: 'podcast', label: 'Podcast', icon: Home },
     { id: 'content', label: 'Nội Dung', icon: FileText },
     { id: 'qa', label: 'Q&A', icon: MessageCircle },
+    { id: 'about', label: 'Về chúng tôi', icon: Info },
   ];
 
   const toggleSidebar = () => {

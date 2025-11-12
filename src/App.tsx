@@ -5,6 +5,7 @@ import EpisodeSelector from './components/EpisodeSelector';
 import Sidebar from './components/Sidebar';
 import Timeline from './components/Timeline';
 import QnA from './components/QnA';
+import About from './components/About';
 import podcastData from './data/podcasts.json';
 import './App.css';
 
@@ -136,6 +137,10 @@ function App() {
 
         {currentPage === 'qa' && (
           <QnA />
+        )}
+
+        {currentPage === 'about' && (
+          <About />
         )}
       </motion.div>
     </div>
